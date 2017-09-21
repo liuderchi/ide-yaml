@@ -24,6 +24,9 @@
   "devDependencies": {
     "eslint": "^4.7.1"
   },
+  "dependencies": {
+    "atom-languageclient": "^0.6.4"
+  },
   "engines": {
     "atom": ">=1.21.0"
   },
