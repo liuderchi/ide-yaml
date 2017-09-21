@@ -1,0 +1,20 @@
+{
+  "name": "ide-yaml",
+  "version": "1.0.0",
+  "description": "Atom-IDE support for YAML language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuderchi/ide-yaml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuderchi/ide-yaml/issues"
+  },
+  "homepage": "https://github.com/liuderchi/ide-yaml#readme"
+}
