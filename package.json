@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/liuderchi/ide-yaml/issues"
   },
-  "homepage": "https://github.com/liuderchi/ide-yaml#readme"
+  "homepage": "https://github.com/liuderchi/ide-yaml#readme",
+  "devDependencies": {
+    "eslint": "^4.7.1"
+  }
 }
