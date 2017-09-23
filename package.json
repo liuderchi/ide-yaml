@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "atom-languageclient": "^0.6.4",
-    "napa": "^3.0.0"
+    "napa": "^3.0.0",
+    "typescript": "2.1.5"
   },
   "napa": {
     "yaml-language-server": "redhat-developer/yaml-language-server#untagged-b090c0122b1f1d8b2b57"
