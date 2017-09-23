@@ -27,6 +27,7 @@
     "eslint": "^4.7.1"
   },
   "dependencies": {
+    "@types/node": "^6.0.52",
     "atom-languageclient": "^0.6.4",
     "napa": "^3.0.0",
     "typescript": "2.1.5"
