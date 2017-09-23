@@ -30,7 +30,8 @@
     "@types/node": "^6.0.52",
     "atom-languageclient": "^0.6.4",
     "napa": "^3.0.0",
-    "typescript": "2.1.5"
+    "typescript": "2.1.5",
+    "vscode-languageserver-types": "3.4.0"
   },
   "napa": {
     "yaml-language-server": "redhat-developer/yaml-language-server#untagged-b090c0122b1f1d8b2b57"
