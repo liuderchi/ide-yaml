@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/liuderchi/ide-yaml#readme",
   "devDependencies": {
-    "eslint": "^4.7.1",
-    "napa": "^3.0.0"
+    "eslint": "^4.7.1"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.4"
+    "atom-languageclient": "^0.6.4",
+    "napa": "^3.0.0"
   },
   "napa": {
     "yaml-language-server": "redhat-developer/yaml-language-server#untagged-b090c0122b1f1d8b2b57"
