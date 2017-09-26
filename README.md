@@ -64,7 +64,7 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 [travis-project]: https://travis-ci.org/liuderchi/ide-yaml "travis-project"
 [david-status]: https://david-dm.org/liuderchi/ide-yaml.svg "david-status"
 [david-project]: https://david-dm.org/liuderchi/ide-yaml "david-project"
-[demo1]: https://user-images.githubusercontent.com/4994705/30819235-ba340746-a1e3-11e7-839e-3240056d4013.png "demo1"
+[demo1]: https://user-images.githubusercontent.com/4994705/30840977-ccfd8d28-a23f-11e7-8ec5-6c62426f5247.png "demo1"
 
 [atom-ide-ui]: https://atom.io/packages/atom-ide-ui "atom-ide-ui"
 [CONTRIBUTING.md]: https://github.com/liuderchi/ide-yaml/blob/master/CONTRIBUTING.md "CONTRIBUTING.md"
