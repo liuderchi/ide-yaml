@@ -34,7 +34,7 @@
     "vscode-languageserver-types": "3.4.0"
   },
   "napa": {
-    "yaml-language-server": "redhat-developer/yaml-language-server#untagged-b090c0122b1f1d8b2b57"
+    "yaml-language-server": "redhat-developer/yaml-language-server#0.0.1"
   },
   "engines": {
     "atom": ">=1.21.0"
