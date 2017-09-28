@@ -1,8 +1,8 @@
-cd node_modules/yaml-language-server/server &&
+cd node_modules/yaml-language-server &&
 
 npm install && npm run compile &&
 
-serverPath='../out/server/src/server.js'
+serverPath='out/server/src/server.js'
 
 echo "Checking built yaml lang server path: $serverPath"
 
