@@ -8,10 +8,16 @@ Atom-IDE support for YAML language
 
 ![demo1][demo1]
 
+![demo2][demo2]
+
 
 ## Features
 
-  - Tooltips for YAML linter message
+  - YAML Outline in *Outline View*
+      - Quick navigation by clicking
+      - Searching by entering keywords
+  - Tooltips for
+      - Linter message
 
 
 ## Requirements
@@ -64,7 +70,8 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 [travis-project]: https://travis-ci.org/liuderchi/ide-yaml "travis-project"
 [david-status]: https://david-dm.org/liuderchi/ide-yaml.svg "david-status"
 [david-project]: https://david-dm.org/liuderchi/ide-yaml "david-project"
-[demo1]: https://user-images.githubusercontent.com/4994705/30840977-ccfd8d28-a23f-11e7-8ec5-6c62426f5247.png "demo1"
+[demo1]: https://user-images.githubusercontent.com/4994705/30978941-b57d0f08-a441-11e7-84c7-c832b64c337d.png "demo1"
+[demo2]: https://user-images.githubusercontent.com/4994705/30978942-b5ad6a0e-a441-11e7-989d-25db64fc33d1.png "demo2"
 
 [atom-ide-ui]: https://atom.io/packages/atom-ide-ui "atom-ide-ui"
 [CONTRIBUTING.md]: https://github.com/liuderchi/ide-yaml/blob/master/CONTRIBUTING.md "CONTRIBUTING.md"
