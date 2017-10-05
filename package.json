@@ -5,7 +5,8 @@
   "main": "src/main.js",
   "scripts": {
     "install": "napa",
-    "postinstall": "./build-yaml-lang-server.sh",
+    "postinstall": "npm run buildYamlServer",
+    "buildYamlServer": "npm install --prefix node_modules/yaml-language-server && npm run compile --prefix node_modules/yaml-language-server",
     "lint": "eslint ./src",
     "test": "npm run lint"
   },
