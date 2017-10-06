@@ -5,8 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "install": "napa",
-    "postinstall": "node build-yaml-lang-server.js",
-    "lint": "eslint ./",
+    "lint": "eslint src/",
     "test": "npm run lint"
   },
   "repository": "https://github.com/liuderchi/ide-yaml.git",
