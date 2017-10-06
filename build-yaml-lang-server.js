@@ -7,7 +7,7 @@ const commands = [
     name: 'Server Install',
     run: () => childProcess.spawnSync(
       'npm',
-      ['install', '--prefix', 'node_modules/yaml-language-server'],
+      ['install', '--prefix', path.join(__dirname, 'node_modules/yaml-language-server')],
       { encoding: 'utf8' }
     ),
   },
@@ -15,7 +15,7 @@ const commands = [
     name: 'Server Compile',
     run: () => childProcess.spawnSync(
       'npm',
-      ['run', 'compile', '--prefix', 'node_modules/yaml-language-server'],
+      ['run', 'compile', '--prefix', path.join(__dirname, 'node_modules/yaml-language-server')],
       { encoding: 'utf8' }
     ),
   },
