@@ -1,22 +1,28 @@
 // show welcome message on first installation
 const path = require('path')
 const fs = require('fs')
+const packageJSON = require('../package.json')
 
-const WELCOME_SHOWN = path.join(__dirname, '..', 'WELCOME_SHOWN')
+const { name: pkgName, atomRequirements: requirements, enhancedScopes } = packageJSON
+const REQUIREMENTS_CHECK_PASSED = path.join(__dirname, '..', 'REQUIREMENTS_CHECK_PASSED')
+
+const touchFile = (path) => fs.closeSync(fs.openSync(path, 'w'))
 
 const generateWelcomeMsg = () => {
-  return `## Welcome to ide-html\n\nQuick start for ide-html:\n${[
-    'Open a HTML file from the Project',
+  const grammarName = enhancedScopes[0].split('.')[1].toUpperCase()
+  return `## Welcome to ${pkgName}\n\nQuick start:\n${[
+    `Open ${grammarName} file from your Project`,
     'Dispatch command `Outline View: Toggle`',
   ].map((str, i) => `${i}. ${str}\n`).join('')
   }\nHappy Using Atom IDE : )`
 }
 
 const generateWarnMsg = () => {
-  return `## Welcome to ide-html\n\nPlease install following requirements:\n${[
-    '[`atom-ide-ui`](https://atom.io/packages/atom-ide-ui)',
-  ].map((str, i) => `${i}. ${str}\n`).join('')
-  }\nso that ide-html can work properly`
+  return `## Welcome to ${pkgName}\n\nPlease install and activate these requirements:\n${
+    requirements
+      .map((name, i) => `${i}. [\`${name}\`](https://atom.io/packages/${name})\n`)
+      .join('')
+  }\nso that ${pkgName} can work properly.`
 }
 
 const helpButton = [
@@ -24,9 +30,9 @@ const helpButton = [
     text: ' Help',
     onDidClick: () => { atom.commands.dispatch(
       atom.views.getView(atom.workspace.getActivePane()),
-      'ide-html:help'
+      `${pkgName}:help`
     )},
-    className: 'btn btn-success btn-lg icon-light-bulb',
+    className: 'btn btn-lg icon-light-bulb',
   },
 ]
 
@@ -39,15 +45,15 @@ const settingsButton = [
         'settings-view:install-packages-and-themes'
       )
     },
-    className: 'btn btn-success btn-lg icon-tools',
+    className: 'btn btn-lg icon-tools',
   },
 ]
 
-const showWelcomeNotification = () => {
+const checkRequirementsThenWelcome = () => {
   try {
-    fs.accessSync(WELCOME_SHOWN)
+    fs.accessSync(REQUIREMENTS_CHECK_PASSED)
   } catch (err) {
-    if (atom.packages.isPackageLoaded('atom-ide-ui')) {
+    if (requirements.every(req => atom.packages.isPackageLoaded(req))) {
       atom.notifications.addSuccess(
         generateWelcomeMsg(),
         {
@@ -56,7 +62,7 @@ const showWelcomeNotification = () => {
           icon: 'thumbsup',
         }
       )
-      fs.closeSync(fs.openSync(WELCOME_SHOWN, 'w'))
+      touchFile(REQUIREMENTS_CHECK_PASSED)
     } else {
       atom.notifications.addWarning(
         generateWarnMsg(),
@@ -72,5 +78,5 @@ const showWelcomeNotification = () => {
 
 
 module.exports = {
-  showWelcomeNotification,
+  checkRequirementsThenWelcome,
 }
