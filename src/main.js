@@ -1,11 +1,9 @@
 const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
-const { registerBuildServerCommand } = require('./yaml_server_util')
 
 class HTMLLanguageClient extends AutoLanguageClient {
   constructor() {
     super()
-    registerBuildServerCommand()
   }
   getGrammarScopes () { return ['source.yaml'] }
   getLanguageName () { return 'YAML' }
