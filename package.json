@@ -25,7 +25,8 @@
     "eslint": "^4.7.1"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.4"
+    "atom-languageclient": "^0.6.4",
+    "yaml-language-server": "git+https://github.com/liuderchi/yaml-language-server.git#build"
   },
   "engines": {
     "atom": ">=1.21.0"
