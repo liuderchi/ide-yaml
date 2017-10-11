@@ -4,7 +4,6 @@
   "description": "Atom-IDE support for YAML language",
   "main": "src/main.js",
   "scripts": {
-    "install": "napa",
     "lint": "eslint src/",
     "test": "npm run lint"
   },
@@ -26,14 +25,8 @@
     "eslint": "^4.7.1"
   },
   "dependencies": {
-    "@types/node": "^6.0.52",
     "atom-languageclient": "^0.6.4",
-    "napa": "^3.0.0",
-    "typescript": "2.1.5",
-    "vscode-languageserver-types": "3.4.0"
-  },
-  "napa": {
-    "yaml-language-server": "redhat-developer/yaml-language-server#0.0.1"
+    "yaml-language-server": "git+https://github.com/liuderchi/yaml-language-server.git#build"
   },
   "engines": {
     "atom": ">=1.21.0"
