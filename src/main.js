@@ -1,9 +1,11 @@
 const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
+const { registerHelpCommands } = require('./help_cmd')
 
-class HTMLLanguageClient extends AutoLanguageClient {
+class YAMLLanguageClient extends AutoLanguageClient {
   constructor() {
     super()
+    registerHelpCommands()
   }
   getGrammarScopes () { return ['source.yaml'] }
   getLanguageName () { return 'YAML' }
@@ -25,4 +27,4 @@ class HTMLLanguageClient extends AutoLanguageClient {
   }
 }
 
-module.exports = new HTMLLanguageClient()
+module.exports = new YAMLLanguageClient()

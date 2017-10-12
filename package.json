@@ -72,5 +72,8 @@
         "0.1.0": "provideOutlines"
       }
     }
+  },
+  "atomCommands": {
+    "ide-yaml:help": "Provides help information and descriptions of commands."
   }
 }
