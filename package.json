@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "atom-languageclient": "^0.6.4",
-    "yaml-language-server": "git+https://github.com/liuderchi/yaml-language-server.git#build"
+    "yaml-language-server": "^0.0.1"
   },
   "engines": {
     "atom": ">=1.21.0"
