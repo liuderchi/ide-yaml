@@ -73,6 +73,9 @@
       }
     }
   },
+  "atomRequirements": [
+    "atom-ide-ui"
+  ],
   "atomCommands": {
     "ide-yaml:help": "Provides help information and descriptions of commands."
   }
