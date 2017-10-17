@@ -7,7 +7,10 @@
     "lint": "eslint src/",
     "test": "npm run lint"
   },
-  "repository": "https://github.com/liuderchi/ide-yaml.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuderchi/ide-yaml.git"
+  },
   "keywords": [
     "yaml",
     "yaml-parsing",
@@ -15,7 +18,9 @@
     "language-server-protocol",
     "outline-view"
   ],
-  "author": "Te-Chi Liu",
+  "author": {
+    "name": "Te-Chi Liu"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/liuderchi/ide-yaml/issues"
