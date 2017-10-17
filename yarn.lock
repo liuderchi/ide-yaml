@@ -932,10 +932,6 @@ tmp@^0.0.33:
   dependencies:
     os-tmpdir "~1.0.2"
 
-triesearch@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/triesearch/-/triesearch-1.0.2.tgz#7d99c1bb2a0965618a1ac1ec82f5ef7c868ed7ed"
-
 tryit@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tryit/-/tryit-1.0.3.tgz#393be730a9446fd1ead6da59a014308f36c289cb"
@@ -1033,33 +1029,26 @@ yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
-yaml-ast-parser-beta@0.0.33:
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/yaml-ast-parser-beta/-/yaml-ast-parser-beta-0.0.33.tgz#a06aab026023180e7a8a66941622f616d68828d0"
-
 yaml-ast-parser@0.0.34:
   version "0.0.34"
   resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.34.tgz#d00f3cf9d773b7241409ae92a6740d1db19f49e6"
 
-yaml-ast-parser@^0.0.32:
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.32.tgz#da0f1c28997805f1597feefbed4f92bd67656b6f"
+yaml-ast-parser@0.0.36:
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.36.tgz#9dfdef461570253392af1941b127b9de699a089b"
 
-yaml-language-server@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.1.tgz#3b406472e41f9b9d98c6cc1ef048e0f7aec57704"
+yaml-language-server@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.3.tgz#ccf79a2de1b76f05632150afda4f07d70635f1e2"
   dependencies:
     "@types/mocha" "2.2.41"
     deep-equal "^1.0.1"
     jsonc-parser "^0.4.2"
-    minimatch "^3.0.4"
     mocha "3.4.2"
     request-light "^0.2.0"
-    triesearch "^1.0.2"
     vscode-json-languageservice "2.0.16"
     vscode-languageserver "3.1.0"
     vscode-nls "^2.0.2"
     vscode-uri "1.0.0"
     vscode-yaml-languageservice "^0.2.0"
-    yaml-ast-parser "^0.0.32"
-    yaml-ast-parser-beta "0.0.33"
+    yaml-ast-parser "0.0.36"

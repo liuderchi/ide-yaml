@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "atom-languageclient": "^0.6.4",
-    "yaml-language-server": "^0.0.1"
+    "yaml-language-server": "^0.0.3"
   },
   "engines": {
     "atom": ">=1.21.0"
