@@ -9,6 +9,7 @@
   },
   "repository": "https://github.com/liuderchi/ide-yaml.git",
   "keywords": [
+    "atom-ide",
     "yaml",
     "yaml-parsing",
     "ide",
