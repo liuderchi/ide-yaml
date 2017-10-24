@@ -9,6 +9,7 @@
   },
   "repository": "https://github.com/liuderchi/ide-yaml.git",
   "keywords": [
+    "atom-ide",
     "yaml",
     "yaml-parsing",
     "ide",
@@ -24,11 +25,11 @@
   },
   "homepage": "https://github.com/liuderchi/ide-yaml#readme",
   "devDependencies": {
-    "eslint": "^4.7.1"
+    "eslint": "^4.9.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.4",
-    "yaml-language-server": "^0.0.1"
+    "atom-languageclient": "^0.6.5",
+    "yaml-language-server": "^0.0.3"
   },
   "engines": {
     "atom": ">=1.21.0"
