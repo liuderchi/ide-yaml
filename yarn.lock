@@ -79,11 +79,11 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-atom-languageclient@^0.6.5:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.6.5.tgz#760cb2e036d71ea85090ac123d5fc6c829fd4649"
+atom-languageclient@^0.6.7:
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.6.7.tgz#d189c7f5c4cb225c02ebb177bf9e8dbf32a25af5"
   dependencies:
-    vscode-jsonrpc "^3.3.1"
+    vscode-jsonrpc "^3.4.1"
 
 babel-code-frame@^6.22.0:
   version "6.26.0"
@@ -968,7 +968,7 @@ vscode-json-languageservice@^2.0.14:
     vscode-nls "^2.0.2"
     vscode-uri "^1.0.1"
 
-vscode-jsonrpc@^3.1.0, vscode-jsonrpc@^3.3.1:
+vscode-jsonrpc@^3.1.0, vscode-jsonrpc@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.4.1.tgz#e2e0b9e121f71a2b5448058a34a3aef8376a5e91"
 
@@ -1037,9 +1037,9 @@ yaml-ast-parser@0.0.36:
   version "0.0.36"
   resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.36.tgz#9dfdef461570253392af1941b127b9de699a089b"
 
-yaml-language-server@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.3.tgz#ccf79a2de1b76f05632150afda4f07d70635f1e2"
+yaml-language-server@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.6.tgz#3c301a49f8aa4bcf394901763c764c39e0e235fa"
   dependencies:
     "@types/mocha" "2.2.41"
     deep-equal "^1.0.1"
