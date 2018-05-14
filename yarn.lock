@@ -500,6 +500,13 @@ js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
+js-yaml@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
 js-yaml@^3.8.4, js-yaml@^3.9.1:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
@@ -940,11 +947,12 @@ yaml-ast-parser@0.0.40:
   version "0.0.40"
   resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.40.tgz#08536d4e73d322b1c9ce207ab8dd70e04d20ae6e"
 
-yaml-language-server@^0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.11.tgz#aef655e7067aca95123bde0404434d32f401c88a"
+yaml-language-server@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.12.tgz#0b028e17a8a1aad28de7403e689389842cb1872d"
   dependencies:
     deep-equal "^1.0.1"
+    js-yaml "^3.11.0"
     jsonc-parser "^1.0.3"
     request-light "^0.2.2"
     vscode-json-languageservice "3.0.12"
