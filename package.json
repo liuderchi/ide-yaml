@@ -32,7 +32,7 @@
     "yaml-language-server": "^0.0.12"
   },
   "engines": {
-    "atom": ">=1.21.0"
+    "atom": "1.3.0"
   },
   "enhancedScopes": [
     "source.yaml"
