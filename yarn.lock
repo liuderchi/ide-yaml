@@ -180,10 +180,6 @@ debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
-deep-equal@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
-
 deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
@@ -555,9 +551,9 @@ js-yaml@^3.11.0:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.8.4:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
+js-yaml@^3.12.0:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -569,10 +565,6 @@ json-schema-traverse@^0.4.1:
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
-
-jsonc-parser@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-1.0.0.tgz#ddcc864ae708e60a7a6dd36daea00172fa8d9272"
 
 jsonc-parser@^1.0.3:
   version "1.0.3"
@@ -885,15 +877,6 @@ vscode-json-languageservice@3.0.12:
     vscode-nls "^3.2.1"
     vscode-uri "^1.0.3"
 
-vscode-json-languageservice@^2.0.14:
-  version "2.0.21"
-  resolved "https://registry.yarnpkg.com/vscode-json-languageservice/-/vscode-json-languageservice-2.0.21.tgz#31a15afc2096a778f5f64d74dfd5f7a3b0193493"
-  dependencies:
-    jsonc-parser "^1.0.0"
-    vscode-languageserver-types "^3.4.0"
-    vscode-nls "^2.0.2"
-    vscode-uri "^1.0.1"
-
 vscode-jsonrpc@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.4.1.tgz#e2e0b9e121f71a2b5448058a34a3aef8376a5e91"
@@ -908,10 +891,6 @@ vscode-languageserver-protocol@^3.7.0:
   dependencies:
     vscode-jsonrpc "^3.6.0"
     vscode-languageserver-types "^3.7.0"
-
-vscode-languageserver-types@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.4.0.tgz#5043ae47ee4ac16af07bb3d0ca561235e0c0d2fa"
 
 vscode-languageserver-types@^3.6.1, vscode-languageserver-types@^3.7.0:
   version "3.7.1"
@@ -940,16 +919,6 @@ vscode-uri@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-1.0.1.tgz#11a86befeac3c4aa3ec08623651a3c81a6d0bbc8"
 
-vscode-yaml-languageservice@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vscode-yaml-languageservice/-/vscode-yaml-languageservice-0.2.0.tgz#cace280f1cd0a1f6f008471d78f91690428e23a6"
-  dependencies:
-    js-yaml "^3.8.4"
-    jsonc-parser "^1.0.0"
-    vscode-json-languageservice "^2.0.14"
-    vscode-nls "^2.0.2"
-    yaml-ast-parser "0.0.34"
-
 which@^1.2.9:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/which/-/which-1.3.0.tgz#ff04bdfc010ee547d780bec38e1ac1c2777d253a"
@@ -970,20 +939,15 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
-yaml-ast-parser@0.0.34:
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.34.tgz#d00f3cf9d773b7241409ae92a6740d1db19f49e6"
-
 yaml-ast-parser@0.0.40:
   version "0.0.40"
   resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.40.tgz#08536d4e73d322b1c9ce207ab8dd70e04d20ae6e"
 
-yaml-language-server@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.12.tgz#0b028e17a8a1aad28de7403e689389842cb1872d"
+yaml-language-server@^0.0.17:
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.0.17.tgz#fd0f0b60066c8486d863d16ab8f095eeed9ee1da"
   dependencies:
-    deep-equal "^1.0.1"
-    js-yaml "^3.11.0"
+    js-yaml "^3.12.0"
     jsonc-parser "^1.0.3"
     request-light "^0.2.2"
     vscode-json-languageservice "3.0.12"
@@ -991,5 +955,4 @@ yaml-language-server@^0.0.12:
     vscode-languageserver-types "^3.6.1"
     vscode-nls "^3.2.2"
     vscode-uri "1.0.3"
-    vscode-yaml-languageservice "^0.2.0"
     yaml-ast-parser "0.0.40"
