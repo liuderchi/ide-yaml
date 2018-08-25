@@ -8,6 +8,7 @@ const REQUIREMENTS_CHECK_PASSED = path.join(__dirname, '..', 'REQUIREMENTS_CHECK
 
 const touchFile = (path) => fs.closeSync(fs.openSync(path, 'w'))
 
+// TODO make it pure
 const generateWelcomeMsg = () => {
   const grammarName = enhancedScopes[0].split('.')[1].toUpperCase()
   return `## Welcome to ${pkgName}\n\nQuick start:\n${[
@@ -17,37 +18,38 @@ const generateWelcomeMsg = () => {
   }\nHappy Using Atom IDE : )`
 }
 
+// TODO make it pure
 const generateWarnMsg = () => {
   return `## Welcome to ${pkgName}\n\nPlease install and activate these requirements:\n${
     requirements
-      .map((name, i) => `${i}. [\`${name}\`](https://atom.io/packages/${name})\n`)
+      .map((name, i) => `${i+1}. [\`${name}\`](https://atom.io/packages/${name})\n`)
       .join('')
   }\nso that ${pkgName} can work properly.`
 }
 
-const helpButton = [
-  {
-    text: ' Help',
-    onDidClick: () => { atom.commands.dispatch(
+// TODO dismiss on click
+const helpButton = {
+  text: ' Help',
+  onDidClick: () => {
+    atom.commands.dispatch(
       atom.views.getView(atom.workspace.getActivePane()),
       `${pkgName}:help`
-    )},
-    className: 'btn btn-lg icon-light-bulb',
+    )
   },
-]
+  className: 'btn btn-lg icon-light-bulb',
+}
 
-const settingsButton = [
-  {
-    text: ' Open Settings Page',
-    onDidClick: () => {
-      atom.commands.dispatch(
-        atom.views.getView(atom.workspace.getActivePane()),
-        'settings-view:install-packages-and-themes'
-      )
-    },
-    className: 'btn btn-lg icon-tools',
+// TODO dismiss on click
+const settingsButton = {
+  text: ' Open Settings Page',
+  onDidClick: () => {
+    atom.commands.dispatch(
+      atom.views.getView(atom.workspace.getActivePane()),
+      'settings-view:install-packages-and-themes'
+    )
   },
-]
+  className: 'btn btn-lg icon-tools',
+}
 
 const checkRequirementsThenWelcome = () => {
   try {
@@ -57,17 +59,27 @@ const checkRequirementsThenWelcome = () => {
       atom.notifications.addSuccess(
         generateWelcomeMsg(),
         {
-          buttons: helpButton,
+          buttons: [helpButton],
           dismissable: true,
           icon: 'thumbsup',
         }
       )
       touchFile(REQUIREMENTS_CHECK_PASSED)
     } else {
-      atom.notifications.addWarning(
+      const notification = atom.notifications.addWarning(
         generateWarnMsg(),
         {
-          buttons: settingsButton,
+          buttons: [
+            settingsButton,
+            {
+              text: ' Ignore This Message',
+              onDidClick: () => {
+                notification.dismiss()
+                touchFile(REQUIREMENTS_CHECK_PASSED)
+              },
+              className: 'btn btn-lg icon-circle-slash',
+            },
+          ],
           dismissable: true,
           icon: 'info',
         }
