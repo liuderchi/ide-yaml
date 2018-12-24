@@ -650,9 +650,9 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier@^1.14.3:
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.3.tgz#90238dd4c0684b7edce5f83b0fb7328e48bd0895"
+prettier@^1.15.2:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.15.3.tgz#1feaac5bdd181237b54dbe65d874e02a1472786a"
 
 progress@^2.0.0:
   version "2.0.0"
@@ -894,13 +894,13 @@ yaml-ast-parser@0.0.40:
   version "0.0.40"
   resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.40.tgz#08536d4e73d322b1c9ce207ab8dd70e04d20ae6e"
 
-yaml-language-server@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.1.0.tgz#ab3aff5c601ae33e03dc08c0960fd7c70296e635"
+yaml-language-server@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.2.0.tgz#3f551e4d449943e05e31dd69fcb5ef56498467a8"
   dependencies:
     js-yaml "^3.12.0"
     jsonc-parser "^1.0.3"
-    prettier "^1.14.3"
+    prettier "^1.15.2"
     request-light "^0.2.3"
     vscode-json-languageservice "3.0.12"
     vscode-languageserver "^4.0.0"
