@@ -894,13 +894,13 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
-yaml-ast-parser@0.0.40:
-  version "0.0.40"
-  resolved "https://registry.yarnpkg.com/yaml-ast-parser/-/yaml-ast-parser-0.0.40.tgz#08536d4e73d322b1c9ce207ab8dd70e04d20ae6e"
+yaml-ast-parser-custom-tags@0.0.43:
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/yaml-ast-parser-custom-tags/-/yaml-ast-parser-custom-tags-0.0.43.tgz#46968145ce4e24cb03c3312057f0f141b93a7d02"
 
-yaml-language-server@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.3.1.tgz#a619866ba435521aab2aafd411d109728452ef41"
+yaml-language-server@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.4.0.tgz#1351c4b1bc8349e71b032b4330cab988493231c6"
   dependencies:
     js-yaml "^3.12.0"
     jsonc-parser "^1.0.3"
@@ -911,4 +911,4 @@ yaml-language-server@^0.3.0:
     vscode-languageserver-types "^3.6.1"
     vscode-nls "^3.2.2"
     vscode-uri "^1.0.6"
-    yaml-ast-parser "0.0.40"
+    yaml-ast-parser-custom-tags "0.0.43"
