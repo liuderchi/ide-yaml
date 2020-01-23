@@ -870,9 +870,9 @@ yaml-ast-parser-custom-tags@0.0.43:
   version "0.0.43"
   resolved "https://registry.yarnpkg.com/yaml-ast-parser-custom-tags/-/yaml-ast-parser-custom-tags-0.0.43.tgz#46968145ce4e24cb03c3312057f0f141b93a7d02"
 
-yaml-language-server@^0.6.0:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.6.1.tgz#431c93e0b3148066f26064634725be1252ce58f5"
+yaml-language-server@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/yaml-language-server/-/yaml-language-server-0.7.0.tgz#049f4e8610e0f3501b35df51f2a4412f92f476c5"
   dependencies:
     js-yaml "^3.13.1"
     jsonc-parser "^2.1.0"
