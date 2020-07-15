@@ -76,6 +76,9 @@
       }
     }
   },
+  "activationHooks": [
+    "language-yaml:grammar-used"
+  ],
   "atomRequirements": [
     "atom-ide-ui"
   ],
