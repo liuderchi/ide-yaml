@@ -28,7 +28,7 @@
     "eslint": "^7.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.9.6",
+    "atom-languageclient": "^1.0.0",
     "yaml-language-server": "^0.10.0"
   },
   "engines": {
