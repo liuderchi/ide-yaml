@@ -1,7 +1,9 @@
+'use babel'
+
 // show welcome message on first installation
-const path = require('path')
-const fs = require('fs')
-const packageJSON = require('../package.json')
+import path from 'path'
+import fs from 'fs'
+import packageJSON from '../package.json'
 
 const { name: pkgName, atomRequirements: requirements, enhancedScopes } = packageJSON
 const REQUIREMENTS_CHECK_PASSED = path.join(__dirname, '..', 'REQUIREMENTS_CHECK_PASSED')
@@ -14,7 +16,7 @@ const generateWelcomeMsg = () => {
   return `## Welcome to ${pkgName}\n\nQuick start:\n${[
     `Open ${grammarName} file from your Project`,
     'Dispatch command `Outline View: Toggle`',
-  ].map((str, i) => `${i}. ${str}\n`).join('')
+  ].map((str, i) => `${i+1}. ${str}\n`).join('')
   }\nHappy Using Atom IDE : )`
 }
 
@@ -51,7 +53,7 @@ const settingsButton = {
   className: 'btn btn-lg icon-tools',
 }
 
-const checkRequirementsThenWelcome = () => {
+export const checkRequirementsThenWelcome = () => {
   try {
     fs.accessSync(REQUIREMENTS_CHECK_PASSED)
   } catch (err) {
@@ -86,9 +88,4 @@ const checkRequirementsThenWelcome = () => {
       )
     }
   }
-}
-
-
-module.exports = {
-  checkRequirementsThenWelcome,
 }
