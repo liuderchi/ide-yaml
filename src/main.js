@@ -1,7 +1,7 @@
 const path = require('path')
 const { AutoLanguageClient } = require('atom-languageclient')
-const { registerHelpCommands } = require('./help_cmd')
-const { checkRequirementsThenWelcome } = require('./welcome_notification')
+const { registerHelpCommands } = require('./helpCmd')
+const { checkRequirementsThenWelcome } = require('./welcomeNotification')
 
 class YAMLLanguageClient extends AutoLanguageClient {
   constructor() {

@@ -1,7 +1,7 @@
 # ide-yaml
 
 [![apm-download-count][apm-download-count]][apm-download-link]
-[![travis-status][travis-status]][travis-project]
+[![ci-status][ci-status]][ci-link]
 [![dependency-status][david-status]][david-project]
 
 Atom-IDE support for YAML language
@@ -66,15 +66,15 @@ Please read [CONTRIBUTING.md][CONTRIBUTING.md] for more details.
 
 [apm-download-count]: https://img.shields.io/apm/dm/ide-yaml.svg "apm-download-count"
 [apm-download-link]: https://atom.io/packages/ide-yaml "apm-download-link"
-[travis-status]: https://travis-ci.org/liuderchi/ide-yaml.svg?branch=master "travis-status"
-[travis-project]: https://travis-ci.org/liuderchi/ide-yaml "travis-project"
+[ci-status]: https://github.com/liuderchi/ide-yaml/actions/workflows/ci.yml/badge.svg "ci-status"
+[ci-link]: https://github.com/liuderchi/ide-yaml/actions "ci-link"
 [david-status]: https://david-dm.org/liuderchi/ide-yaml.svg "david-status"
 [david-project]: https://david-dm.org/liuderchi/ide-yaml "david-project"
 [demo1]: https://user-images.githubusercontent.com/4994705/30978941-b57d0f08-a441-11e7-84c7-c832b64c337d.png "demo1"
 [demo2]: https://user-images.githubusercontent.com/4994705/30978942-b5ad6a0e-a441-11e7-989d-25db64fc33d1.png "demo2"
 
 [atom-ide-ui]: https://atom.io/packages/atom-ide-ui "atom-ide-ui"
-[CONTRIBUTING.md]: https://github.com/liuderchi/ide-yaml/blob/master/CONTRIBUTING.md "CONTRIBUTING.md"
+[CONTRIBUTING.md]: https://github.com/liuderchi/ide-yaml/blob/main/CONTRIBUTING.md "CONTRIBUTING.md"
 [create-issue]: https://github.com/liuderchi/ide-yaml/issues/new "create-issue"
 
 [atom-languageclient]: https://github.com/atom/atom-languageclient "atom-languageclient"
